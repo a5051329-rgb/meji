@@ -26,7 +26,7 @@
     }
     .page{width:min(1080px,calc(100% - 36px));margin:auto;padding:34px 0 60px}
     header{
-      display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:end;
+      display:grid;grid-template-columns:1fr;gap:30px;align-items:end;
       padding:34px;border-top:6px solid var(--red);background:var(--card);
       box-shadow:0 18px 48px rgba(25,35,38,.09)
     }
@@ -70,8 +70,14 @@
     .choices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .choice{padding:24px;border:1px solid var(--line);background:var(--card)}
     .choice.recommended{border:3px solid var(--green);background:#f7fbf8}
-    .choice .tag{display:inline-block;margin-bottom:12px;padding:3px 8px;color:white;background:var(--muted);font-size:11px;font-weight:800}
+    .choice .tag{display:inline-block;margin-bottom:14px;padding:6px 13px;color:white;background:var(--muted);font-size:14px;font-weight:900;letter-spacing:.06em}
     .choice.recommended .tag{background:var(--green)}
+    .choice.data{border-top:6px solid var(--red)}
+    .choice.data .tag{background:var(--red)}
+    .choice.relation{border-top:6px solid var(--blue)}
+    .choice.relation .tag{background:var(--blue)}
+    .choice.inventory{border-top:6px solid var(--gold)}
+    .choice.inventory .tag{background:var(--gold)}
     .choice p{color:var(--muted)}
     .choice ul{margin:12px 0 0;padding-left:19px}.choice li{margin:7px 0}
     .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -109,14 +115,9 @@
     <div>
       <div class="eyebrow">Meiji BCL renewal · 5-minute decision brief</div>
       <h1>明治合作<br>下一步怎麼走？</h1>
-      <p class="dek">續約不能只看BCL成本，也不能只看合作情誼。本報告先檢視蒐集、互動與購買成果，再把關係維護與襪子庫存納入同一個決策。</p>
+      <p class="dek">三個評估面向指向不同答案：數據成效不支持續約；關係維護與襪子庫存去化則支持續約。決策關鍵在於，公司要把這項合作定位為「取得有效BCL」，還是「維持夥伴關係與處理適齡庫存」。</p>
       <div class="meta"><span>分析日：2026/09/23</span><span>BCL截止：2026/09/20</span><span>銷貨截止：2026/08/31</span><span>資料來源：8TDB</span></div>
     </div>
-    <aside class="verdict">
-      <div class="eyebrow">決策建議</div>
-      <strong>合約不續約，觀察至2027/5–6</strong>
-      <p>完成現有合約後不再追加贈品，持續追蹤明治BCL陸續滿7個月後的互動與購買，再決定是否重啟合作。</p>
-    </aside>
   </header>
 
   <section>
@@ -126,7 +127,7 @@
       <article class="panel">
         <h3>合作沿革</h3>
         <p>因S26合作延續至2025/12，公司於2025/6首次拜訪明治時，就以建立長期關係為方向。明治窗口友善且積極推動合作，這段合作也有「讓公司持續保有這位朋友」的意義。</p>
-        <p>因此，本案除數據成效外，仍有關係維護的考量；但是否重新合作，應等待既有名單成熟後再決定。</p>
+        <p>因此，若公司重視長期異業關係與未來合作機會，關係面具有續約理由；若停止合作，也必須接受窗口關係可能淡化或中斷。</p>
       </article>
       <article class="panel">
         <h3>贈品與庫存現況</h3>
@@ -144,12 +145,12 @@
       <div class="kpi"><div class="name">累計綁定BCL</div><strong>1,504</strong><small>對應1,503位不重複客戶</small></div>
       <div class="kpi"><div class="name">每筆新增BCL成本<span class="tip" tabindex="0" data-tip="新增BCL是透過明治活動完成的新綁定，既有BCL掃描領獎不計入。全期贈品成本91,218元÷1,504筆綁定＝60.65元。">?</span></div><strong>$60.65</strong><small>全成本計；自辦活動約$77</small></div>
     </div>
-    <div class="callout"><p><strong>蒐集效率成立、商業價值尚未成立：</strong>即使把兩期所有約定贈品成本都算入，每位新增BCL仍低於自辦活動；但成本若只分攤到目前有效者為$75.26，已接近自辦活動的$77，且成熟後購買率仍偏低。</p></div>
+    <div class="callout"><p><strong>蒐集效率成立、商業價值不足：</strong>即使把兩期所有約定贈品成本都算入，每位新增BCL仍低於自辦活動；但成本若只分攤到目前有效者為$75.26，已接近自辦活動的$77，且已成熟客戶的購買率仍偏低。</p></div>
   </section>
 
   <section>
     <div class="section-head"><span class="no">02</span><h2>全體1,503人中，已有285人可驗證購買力</h2></div>
-    <p class="lead">全體有80.3%在綁定當下仍在孕期；截至目前，285人已滿7個月，可作為現階段最可靠的購買驗證。其餘778位0–6個月客戶則是下一波可觀察的發展池。</p>
+    <p class="lead">全體有80.3%在綁定當下仍在孕期；截至目前，285人已滿7個月，可作為購買驗證。另有778位0–6個月客戶尚未進入主要適購期，但不將尚未實現的潛在價值納入本次續約效益。</p>
     <div class="grid-2">
       <article class="panel">
         <h3>目前月齡狀態</h3>
@@ -167,7 +168,7 @@
         </div>
       </article>
       <article class="panel">
-        <h3>778位0–6個月發展池</h3>
+        <h3>778位0–6個月客群</h3>
         <div class="compare">
           <div class="bar-row"><span>目前仍有效</span><div class="track"><div class="bar" style="width:79.7%"></div></div><span class="value">620人</span></div>
           <div class="bar-row"><span>可辨識互動<span class="tip" tabindex="0" data-tip="綁定後出現反應、興趣、行動或結果標籤；排除純屬性與流程自動更新，不等於購買意圖。">?</span></span><div class="track"><div class="bar" style="width:52.7%"></div></div><span class="value">410人</span></div>
@@ -210,12 +211,12 @@
 
   <section>
     <div class="section-head"><span class="no">04</span><h2>綁定後仍有互動，但多數沒有走到商品行動</h2></div>
-    <p class="lead">以下以全體1,503位不重複客戶計算，並排除只有屬性更新、流程貼標等自動變化；各項為獨立觀察指標，彼此可能重疊。</p>
+    <p class="lead">以下以全體1,503位不重複客戶計算，並排除只有屬性更新、流程貼標等自動變化；各項為獨立指標，彼此可能重疊。</p>
     <div class="grid-2">
       <article class="panel">
         <h3>綁定後標籤變化</h3>
         <table>
-          <thead><tr><th>觀察指標</th><th>人數</th><th>占全體</th></tr></thead>
+          <thead><tr><th>互動指標</th><th>人數</th><th>占全體</th></tr></thead>
           <tbody>
             <tr><td>出現任何新標籤</td><td>1,424</td><td>94.7%</td></tr>
             <tr><td>可辨識互動</td><td>657</td><td>43.7%</td></tr>
@@ -236,48 +237,30 @@
         <p>互動證明這批名單不是領完贈品就全部消失，但657位互動者中僅45位留下商品行動訊號；最大的問題是「有接觸、少轉換」。30天指標以全體為分母，亦包含尚未累積滿30天的新客，屬保守值。</p>
       </article>
     </div>
-    <div class="callout"><p><strong>留存與封鎖：</strong>目前仍有效1,212人（80.6%），無效／封鎖291人（19.4%）。留存尚可，但不能只靠有效率判斷價值；真正應追蹤的是45位商品行動者，以及778位年輕客群成熟後能否增加購買。</p></div>
+    <div class="callout"><p><strong>留存與封鎖：</strong>目前仍有效1,212人（80.6%），無效／封鎖291人（19.4%）。留存尚可，但全體僅45人出現商品行動、成熟購買率僅1.75%；有效會員多，不代表具有足夠商業價值。</p></div>
   </section>
 
   <section>
-    <div class="section-head"><span class="no">05</span><h2>結論：三個面向，指向不同答案</h2></div>
-    <p class="lead">這三面必須同時成立，才能避免只用購買率否定關係價值，也避免用關係與庫存合理化一個轉換偏弱的合作。</p>
+    <div class="section-head"><span class="no">05</span><h2>結論：三個面向，給出不同續約答案</h2></div>
+    <p class="lead">續不續約取決於公司把哪一個目標放在第一順位。三個面向都是真實成本與價值，不應只取其中一面下結論。</p>
     <div class="choices">
-      <article class="choice">
-        <span class="tag">數據面</span><h3>不支持原條件續約</h3>
+      <article class="choice data">
+        <span class="tag">數據面</span><h3>不適合續約</h3>
         <p>成熟客戶285人僅5人購買，購買率1.75%；第一期成熟購買率也只有1.90%，低於自辦實體2.80%與自辦線上4.23%。</p>
       </article>
-      <article class="choice">
-        <span class="tag">關係面</span><h3>不適合直接斷聯</h3>
-        <p>明治能補足外部孕期與新生兒觸點，窗口積極且合作摩擦低，也保留未來共同內容、活動及資源交換的選擇權。維持關係不等於持續大量供應贈品，而是保持聯繫並保留小規模測試機會。</p>
+      <article class="choice relation">
+        <span class="tag">關係面</span><h3>適合續約</h3>
+        <p>明治窗口積極、合作摩擦低，雙方自2025/6即以長期關係為方向。續約有助維持聯繫，並保留未來共同活動、內容與資源交換的機會。</p>
       </article>
-      <article class="choice recommended">
-        <span class="tag">庫存面</span><h3>明治適合協助去化</h3>
-        <p>約5,700雙小尺寸襪子適合2個月以下寶寶，製作成本約$90,288且久放有受潮風險；明治的孕期與新生兒客群具高度適配性。</p>
+      <article class="choice inventory">
+        <span class="tag">庫存面</span><h3>適合續約</h3>
+        <p>約5,700雙小尺寸襪子適合2個月以下寶寶，久放有受潮風險；明治能接觸孕期與新生兒家庭，是高度適配且可快速去化的管道。</p>
       </article>
     </div>
-    <div class="callout"><p><strong>綜合結論：</strong>本次合約不續約。關係與襪子庫存雖有價值，但不足以抵銷目前成熟購買率偏低的風險；襪子去化保留為未來合作備案，不在本次立即投入。先觀察既有明治BCL陸續滿7個月後的成果，2027/5–6月再重新評估。</p></div>
   </section>
 
   <section>
-    <div class="section-head"><span class="no">06</span><h2>結論建議</h2></div>
-    <div class="timeline">
-      <div class="step"><time>現在–2026/10/31</time><b>完成現約</b><p>發完已約定贈品；逐筆保留掃描、新BCL／既有BCL及贈品核銷。</p></div>
-      <div class="step"><time>2026/11起</time><b>合約不續約</b><p>不簽下一期合約、不追加贈品，也不以襪子庫存另開新一輪名單蒐集。</p></div>
-      <div class="step"><time>觀察期間</time><b>追蹤既有明治BCL</b><p>按月觀察滿7個月人數、有效率、持續互動、商品行動及綁定後購買率。</p></div>
-      <div class="step"><time>2027/05–06</time><b>重新評估</b><p>目前778位0–6個月客戶均已進入主要適購期，再依實際購買成果決定是否重啟合作。</p></div>
-    </div>
-    <div class="callout"><p><strong>決策原則：</strong>不是無限期等待，而是停止新增投入、觀察已取得名單。若2027/5–6月成熟購買率仍明顯低於自辦活動，則不恢復合作；若轉換明顯改善，再重新設計合作條件。</p></div>
-  </section>
-
-  <section class="script">
-    <div class="eyebrow">Partner communication</div>
-    <h2>對明治的建議說法</h2>
-    <blockquote>本期合作贈品將依原約定完成發放。我們很重視與明治一路建立的合作關係，也會持續追蹤本次合作帶來的客戶成果。因公司正在進行年度贈品資源與成效盤點，本期結束後暫不續簽下一期合作；預計於2027年5–6月，在既有客戶陸續進入主要商品適用年齡後，再與明治分享成果並討論後續可能性。</blockquote>
-  </section>
-
-  <section>
-    <div class="section-head"><span class="no">07</span><h2>名詞與口徑</h2></div>
+    <div class="section-head"><span class="no">06</span><h2>名詞與口徑</h2></div>
     <div class="terms">
       <div class="term"><b>新增BCL</b><span>透過明治活動完成的新綁定；既有BCL掃描領獎不計為新增。</span></div>
       <div class="term"><b>成熟客戶</b><span>孩子已滿7個月，進入可立即推薦第一個商品的主要階段。</span></div>
@@ -290,7 +273,7 @@
   </section>
 
   <footer>
-    <p><strong>分析範圍：</strong>目前可辨識的明治合作名單自2025/11起，共1,504個LINE綁定、對應1,503位不重複客戶；成本以綁定數計，月齡、互動與購買以不重複客戶計。第一期891筆綁定用於成熟購買驗證，第二期僅作尚未成熟的補充觀察。</p>
+    <p><strong>分析範圍：</strong>目前可辨識的明治合作名單自2025/11起，共1,504個LINE綁定、對應1,503位不重複客戶；成本以綁定數計，月齡、互動與購買以不重複客戶計。續約判斷以第一期已成熟客戶的實際購買結果為主要依據。</p>
     <p><strong>贈品機制：</strong>人人有獎，既有BCL掃描亦可領取；因此贈品總數不能直接視為新BCL獲取嘗試數。</p>
   </footer>
 </main>
